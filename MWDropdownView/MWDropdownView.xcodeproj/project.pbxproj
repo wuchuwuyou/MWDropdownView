@@ -13,6 +13,7 @@
 		2A8871D21B098F2700336635 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8871D11B098F2700336635 /* Images.xcassets */; };
 		2A8871D51B098F2700336635 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8871D31B098F2700336635 /* LaunchScreen.xib */; };
 		2A8871E11B098F2700336635 /* MWDropdownViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8871E01B098F2700336635 /* MWDropdownViewTests.swift */; };
+		2A8871EC1B098FF500336635 /* MWDropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8871EB1B098FF500336635 /* MWDropdownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2A8871DA1B098F2700336635 /* MWDropdownViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWDropdownViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8871DF1B098F2700336635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A8871E01B098F2700336635 /* MWDropdownViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWDropdownViewTests.swift; sourceTree = "<group>"; };
+		2A8871EB1B098FF500336635 /* MWDropdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWDropdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		2A8871C71B098F2700336635 /* MWDropdownView */ = {
 			isa = PBXGroup;
 			children = (
+				2A8871EA1B098FDD00336635 /* MWDropdownView */,
 				2A8871CA1B098F2700336635 /* AppDelegate.swift */,
 				2A8871CC1B098F2700336635 /* ViewController.swift */,
 				2A8871CE1B098F2700336635 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				2A8871DF1B098F2700336635 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A8871EA1B098FDD00336635 /* MWDropdownView */ = {
+			isa = PBXGroup;
+			children = (
+				2A8871EB1B098FF500336635 /* MWDropdownView.swift */,
+			);
+			path = MWDropdownView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 			files = (
 				2A8871CD1B098F2700336635 /* ViewController.swift in Sources */,
 				2A8871CB1B098F2700336635 /* AppDelegate.swift in Sources */,
+				2A8871EC1B098FF500336635 /* MWDropdownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

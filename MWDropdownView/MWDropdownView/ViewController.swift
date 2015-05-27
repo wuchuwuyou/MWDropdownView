@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func click (sender:UIButton){
-        MWDropdownView.show()
+//        MWDropdownView.show()
 
         //        alert.alertText("hello world")
         
@@ -29,22 +29,22 @@ class ViewController: UIViewController {
         //
         //        self.view.bringSubviewToFront(alert)
 //        
-//        var r = random()
-//        
-//        
-//        r = r%3
-//        
-//        
-//        switch r {
-//        case 0:
-//            alert.showErrorWithText("错误了")
-//        case 1:
-//            alert.showAlertWithText("等会啊！！！")
-//        case 2:
-//            alert.showAlert()
-//        default:
-//            println("default")
-//        }
+        var r = random()
+        
+        
+        r = r%3
+        
+        
+        switch r {
+        case 0:
+            MWDropdownView.showDropdownView("aaaaaaa", message: nil, bgColor: UIColor.redColor(), textColor: UIColor.whiteColor(), time: 2)
+        case 1:
+            MWDropdownView.showDropdownView(nil, message: "dddddd", bgColor: UIColor.blueColor(), textColor: UIColor.blackColor())
+        case 2:
+            MWDropdownView.showDropdownView("1111111")
+        default:
+            println("default")
+        }
 
     }
 }

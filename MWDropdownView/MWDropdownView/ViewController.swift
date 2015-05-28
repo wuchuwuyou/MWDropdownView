@@ -32,16 +32,18 @@ class ViewController: UIViewController {
         var r = random()
         
         
-        r = r%3
+        r = r%4
         
         
         switch r {
         case 0:
             MWDropdownView.showDropdownView("aaaaaaa", message: nil, bgColor: UIColor.redColor(), textColor: UIColor.whiteColor(), time: 2)
         case 1:
-            MWDropdownView.showDropdownView(nil, message: "dddddd", bgColor: UIColor.blueColor(), textColor: UIColor.blackColor())
+            MWDropdownView.showDropdownView(nil, message: "2222222", bgColor: UIColor.blueColor(), textColor: UIColor.orangeColor(), time: NO_TIME)
         case 2:
-            MWDropdownView.showDropdownView("1111111")
+            MWDropdownView.showDropdownView("bbbbbbb", message: nil, bgColor: nil, textColor: nil, time: NO_TIME)
+        case 3:
+            MWDropdownView.show()
         default:
             println("default")
         }

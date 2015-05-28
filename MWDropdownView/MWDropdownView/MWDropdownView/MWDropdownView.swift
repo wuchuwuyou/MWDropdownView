@@ -19,6 +19,8 @@ let titleHeight = 18
 let textHeight = 26
 
 let NO_TIME = -9999
+
+
 class MWDropdownView: UIView {
     
     var defaultViewColor:UIColor = UIColor.orangeColor()
@@ -66,6 +68,7 @@ class MWDropdownView: UIView {
         
         self.isShowing = false;
         
+        self.backgroundColor = defaultViewColor
     }
     internal class func show(){
         var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
@@ -75,22 +78,22 @@ class MWDropdownView: UIView {
         var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
         ddv.showDropdownView(title, message: message, bgColor: bgColor, textColor: textColor, time: time)
     }
-    internal class func showDropdownView(title:String?,message:String?,bgColor:UIColor?,textColor:UIColor?){
-        var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
-        ddv.showDropdownView(title, message: message, bgColor: bgColor, textColor: textColor, time: NO_TIME)
-    }
-    internal class func showDropdownView(title:String?,message:String?,bgColor:UIColor?){
-        var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
-        ddv.showDropdownView(title, message: message, bgColor: bgColor, textColor: ddv.defaultTextColor, time: NO_TIME)
-    }
-    internal class func showDropdownView(title:String?,message:String?){
-        var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
-        ddv.showDropdownView(title, message: message, bgColor: ddv.defaultViewColor, textColor: ddv.defaultTextColor, time: NO_TIME)
-    }
-    internal class func showDropdownView(title:String?){
-        var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
-        ddv.showDropdownView(title, message: ddv.defaultText, bgColor: ddv.defaultViewColor, textColor: ddv.defaultTextColor, time: NO_TIME)
-    }
+//    internal class func showDropdownView(title:String?,message:String?,bgColor:UIColor?,textColor:UIColor?){
+//        var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
+//        ddv.showDropdownView(title, message: message, bgColor: bgColor, textColor: textColor, time: NO_TIME)
+//    }
+//    internal class func showDropdownView(title:String?,message:String?,bgColor:UIColor?){
+//        var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
+//        ddv.showDropdownView(title, message: message, bgColor: bgColor, textColor: ddv.defaultTextColor, time: NO_TIME)
+//    }
+//    internal class func showDropdownView(title:String?,message:String?){
+//        var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
+//        ddv.showDropdownView(title, message: message, bgColor: ddv.defaultViewColor, textColor: ddv.defaultTextColor, time: NO_TIME)
+//    }
+//    internal class func showDropdownView(title:String?){
+//        var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
+//        ddv.showDropdownView(title, message: ddv.defaultText, bgColor: ddv.defaultViewColor, textColor: ddv.defaultTextColor, time: NO_TIME)
+//    }
     
 //    internal class func show(completion: ((Bool) -> Void)?){
 //        var ddv = MWDropdownView(frame: CGRectMake(0, CGFloat(-HEIGHT), UIScreen.mainScreen().bounds.size.width,CGFloat(HEIGHT)))
